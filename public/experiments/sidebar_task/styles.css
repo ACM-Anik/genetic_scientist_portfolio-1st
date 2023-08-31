@@ -1,0 +1,9 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.content {
+  padding: 20px;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Sadykova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        ul.sidebar_link {
+            list-style: none;
+            padding-left: 0;
+            
+        }
+        ul.sidebar_link li{
+            margin-block: 10px;
+        }
+
+        .sidebar_link li a {
+            text-decoration: none;
+            color: #130f49;
+        }
+
+        ul.social_link li {
+            list-style: none;
+            color: #130f49;
+            background: #effbf8;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        ul.social_link li a {
+            text-decoration: none;
+            color: #130f49;
+        }
+
+        .active {
+            color: #a5a6ff;
+        }
+
+        /* main section - home page*/
+        .btn-main {
+            height: 50px;
+            width: 160px;
+            background-color: #130f49;
+            color: #FFFFFF;
+        }
+
+        .btn-main:hover {
+            background-color: #effbf8;
+            border: 1px solid #130f49;
+        }
+
+        .btn-trans {
+            height: 50px;
+            width: 146px;
+            color: #130f49;
+            background-color: none;
+            border: 1px solid #130f49;
+        }
+
+        .btn-trans:hover {
+            color: #FFFFFF;
+            background-color: #130f49;
+        }
+
+        ul.contact-info {
+            border-left: 4px solid #ff972d;
+            list-style: none;
+            padding: 10px;
+        }
+
+        ul.contact-info a {
+            color: #130f49;
+            text-decoration: none;
+        }
+
+        ul.contact-info a:hover {
+            color: #ff972d;
+        }
+
+        /* textt change */
+        .animeText::before {
+            content: "Designer";
+            animation: animate infinite 4s;
+            padding-left: 10px;
+        }
+
+        @keyframes animate {
+            0% {
+                content: "Coder";
+            }
+
+            75% {
+                content: "Player";
+            }
+        }
+    </style>
+</head>
+
+<body class="d-md-flex justify-content-center gap-3">
+    <aside class="sidebar w-25 mx-auto p-3 text-center d-flex flex-column justify-content-between">
+        <div class="author">
+            <div class="image">
+                <img class="cover" style="width: 80px; height: 80px; border: 2px solid #a5a6ff; border-radius: 50%;"
+                    src="/experiments/images/profile_banner.png" alt />
+            </div>
+            <div class="name">
+                <h4>Robert Sadykova</h4>
+            </div>
+        </div>
+        <div>
+            <ul class="sidebar_link text-secondary">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#news">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="my-2">
+            <ul class="social_link d-flex justify-content-center align-items-center gap-2 ps-0 align-self-center">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+            <div class="text-secondary">
+                <p>Copyright © 2023 Robert Sadykova. All rights reserved.</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main style="background-color: #effbf8;" class="p-4">
+        <!-- Home page -->
+        <div class="d-md-flex flex-row-reverse justify-content-center gap-5 align-items-center px-2">
+            <div class="ms-md-4">
+                <img class="img-fluid" src="/experiments/images/profile_banner.png" alt="profile">
+            </div>
+            <div class="fw-bold">
+                <h1 style="font-size: 50px; font-weight: 800; line-height: 70px; color: #130f49;" class="mb-5">Hi, I'm
+                    <span style="color: #a5a6ff;">Sadykova!</span>
+                    <br>
+                    Creative<span class="animeText"></span>
+                    <br>
+                    Based in Florida
+                </h1>
+                <p class="fw-normal text-secondary my-4 text-wrap" style="width: 60%; color: #a5a6ff;">I'm a Florida
+                    based web designer & front-end developer with <span style="color: #a5a6ff;">10+ years</span> of
+                    experience</p>
+                <div class="my-5">
+                    <button class="btn me-2 my-2 my-md-0 btn-main">Got a project?</button>
+                    <button class="btn btn-trans">Let's talk</button>
+                </div>
+                <ul class="contact-info">
+                    <li><a href="tel:+77 022 444 05 05">+77 022 444 05 05</a></li>
+                    <li><a href="support@Sadykova.com">support@Sadykova.com</a></li>
+                    <li><a href="#">Ave Street Avenue, New York</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

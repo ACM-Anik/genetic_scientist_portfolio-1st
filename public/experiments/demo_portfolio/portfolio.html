@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Scientist Portfolio</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Font Awesome icons link -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.css">
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar {
+            background-color: #2c3e50; /* Midnight Blue */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+        .jumbotron {
+            background-color: #34495e; /* Wet Asphalt */
+            color: #ffffff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .jumbotron p {
+            font-size: 18px;
+        }
+        .profile img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            color: #2c3e50; /* Midnight Blue */
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease;
+        }
+        .project {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .publication {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
+            background-color: #ffffff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Custom Colors */
+        .primary-color {
+            color: #2c3e50; /* Midnight Blue */
+        }
+        .accent-color {
+            color: #e74c3c; /* Alizarin Crimson */
+        }
+        .btn-primary {
+            background-color: #e74c3c; /* Alizarin Crimson */
+            border-color: #e74c3c; /* Alizarin Crimson */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ffcc00;
+            border-color: #ffcc00;
+        }
+        /* Custom Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Animation Effects */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 20%, 0);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Genetic Scientist</h1>
+            <p class="lead animate__animated animate__fadeInDown">Exploring the mysteries of genetics and genomics</p>
+            <a href="#contact" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile text-center mb-md-0 mb-4 animate__animated animate__fadeInLeft">
+                        <img src="profile-image.jpg" alt="Profile Image" class="img-fluid mb-3">
+                        <div class="social-links">
+                            <a href="#" class="btn btn-primary"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="description animate__animated animate__fadeInRight">
+                        <h2 class="section-title mb-4">About Me</h2>
+                        <p>Welcome to my portfolio! I'm a passionate genetic scientist with expertise in human genetics and genomics. My research focuses on understanding the genetic basis of complex diseases and identifying potential therapeutic targets. With a background in molecular biology and advanced data analysis techniques, I strive to contribute to groundbreaking discoveries in the field of genetics. Feel free to explore my projects, publications, and blog posts to learn more about my work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 section-bg">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="project p-4 animate__animated animate__fadeIn">
+                        <h3 class="accent-color">Genome-Wide Association Studies</h3>
+                        <p>Investigating the genetic variants associated with diabetes risk using GWAS.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="project p-4 animate__animated animate__fadeIn">
+                        <h3 class="accent-color">Cancer Genomics</h3>
+                        <p>Characterizing somatic mutations in cancer genomes to identify potential driver mutations.</p>
+                    </div>
+                </div>
+                <!-- Add more project columns as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Publications</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="publication p-4 animate__animated animate__fadeInLeft">
+                        <h4 class="accent-color">Genetic Variants and Diabetes Risk</h4>
+                        <p>Doe, J. et al. (2022). Journal of Human Genetics, 42(3), 123-135.</p>
+                        <p>Investigated the association between specific genetic variants and diabetes susceptibility.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="publication p-4 animate__animated animate__fadeInRight">
+                        <h4 class="accent-color">Driver Mutations in Breast Cancer</h4>
+                        <p>Doe, J. et al. (2021). Cancer Research, 55(8), 678-690.</p>
+                        <p>Identified novel driver mutations in breast cancer genomes using integrative analysis.</p>
+                    </div>
+                </div>
+                <!-- Add more publications as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5 section-bg">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-post p-4 animate__animated animate__fadeIn">
+                        <h4 class="accent-color">Unlocking the Secrets of DNA</h4>
+                        <p>Exploring the fascinating world of DNA and its role in genetics.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-post p-4 animate__animated animate__fadeIn">
+                        <h4 class="accent-color">CRISPR-Cas9: Revolutionizing Genetic Editing</h4>
+                        <p>Discovering the potential of CRISPR-Cas9 technology in precision genome editing.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <!-- Add more blog posts as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form class="contact-form animate__animated animate__fadeIn">
+                        <div class="form-group">
+                            <label for="name" class="primary-color">Your Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="primary-color">Email Address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="primary-color">Your Message</label>
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-4 text-center bg-dark text-white">
+        <div class="container">
+            <ul class="list-inline mb-2">
+                <li class="list-inline-item">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+            <p class="mb-0">© 2023 Dr. Jane Doe - Genetic Scientist</p>
+        </div>
+    </footer>
+
+    <!-- Add Font Awesome icons link -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Add Bootstrap JS and Popper.js scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
